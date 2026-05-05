@@ -36,6 +36,10 @@ int main(int argc, char** argv) {
                   << ",\"ticks\":" << tick_count << "}" << std::endl;
                   
         top->start = 0; 
+        
+        // [PM Lucci Patch] Force the hardware to recognize the start pin going low
+        top->clk = !top->clk; top->eval();
+        top->clk = !top->clk; top->eval();
     }
 
     delete top;
