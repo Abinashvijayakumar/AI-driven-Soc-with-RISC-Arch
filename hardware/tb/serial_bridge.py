@@ -5,7 +5,7 @@ import sys
 import time
 
 # PM Lucci Note: This port will be updated based on your next report
-ESP_PORT = '/dev/ttyUSB0' 
+ESP_PORT = '/dev/ttyACM0' 
 BAUD_RATE = 921600
 
 print("[System] Initializing HIL Serial Bridge...")
